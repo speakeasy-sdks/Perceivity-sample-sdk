@@ -87,7 +87,6 @@ if res.game_schema is not None:
     # handle response
     pass
 ```
-
 <!-- End Error Handling -->
 
 <!-- Start Server Selection -->
