@@ -7,6 +7,7 @@ src/aesop_api/utils/__init__.py
 src/aesop_api/utils/retries.py
 src/aesop_api/utils/utils.py
 src/aesop_api/models/errors/sdkerror.py
+tests/helpers.py
 src/aesop_api/models/operations/games_api_create_game.py
 src/aesop_api/models/operations/games_api_list_games.py
 src/aesop_api/models/operations/stories_api_list_stories.py
