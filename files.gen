@@ -18,7 +18,6 @@ src/aesop_api/models/__init__.py
 src/aesop_api/models/errors/__init__.py
 src/aesop_api/models/operations/__init__.py
 src/aesop_api/models/components/__init__.py
-USAGE.md
 docs/models/operations/gamesapicreategameresponse.md
 docs/models/operations/gamesapilistgamesresponse.md
 docs/models/operations/storiesapiliststoriesresponse.md
@@ -26,4 +25,5 @@ docs/models/components/gameschema.md
 docs/models/components/gameschemain.md
 docs/models/components/storyschema.md
 docs/sdks/aesopapi/README.md
+USAGE.md
 .gitattributes
