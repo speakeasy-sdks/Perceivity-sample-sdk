@@ -48,7 +48,7 @@ if res.game_schema is not None:
 
 | Error Object    | Status Code     | Content Type    |
 | --------------- | --------------- | --------------- |
-| errors.SDKError | 400-600         | */*             |
+| errors.SDKError | 4x-5xx          | */*             |
 
 ## games_api_list_games
 
@@ -77,7 +77,7 @@ if res.response is not None:
 
 | Error Object    | Status Code     | Content Type    |
 | --------------- | --------------- | --------------- |
-| errors.SDKError | 400-600         | */*             |
+| errors.SDKError | 4x-5xx          | */*             |
 
 ## stories_api_list_stories
 
@@ -106,4 +106,4 @@ if res.response is not None:
 
 | Error Object    | Status Code     | Content Type    |
 | --------------- | --------------- | --------------- |
-| errors.SDKError | 400-600         | */*             |
+| errors.SDKError | 4x-5xx          | */*             |
