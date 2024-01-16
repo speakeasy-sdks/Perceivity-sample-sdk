@@ -4,7 +4,7 @@ management:
   docChecksum: 7f8941f6def568cab47a6897827bc769
   docVersion: 0.1.0
   speakeasyVersion: internal
-  generationVersion: 2.228.1
+  generationVersion: 2.233.2
   releaseVersion: 0.2.2
   configChecksum: f70b13c5d15264760198e52841562642
   repoURL: https://github.com/speakeasy-sdks/Perceivity-sample-sdk.git
