@@ -4,15 +4,15 @@ management:
   docChecksum: 7f8941f6def568cab47a6897827bc769
   docVersion: 0.1.0
   speakeasyVersion: internal
-  generationVersion: 2.245.1
-  releaseVersion: 0.2.4
-  configChecksum: ed51c3873c9170599651d9a346c74440
+  generationVersion: 2.248.1
+  releaseVersion: 0.3.0
+  configChecksum: 524227a317a6db220b58f688b2de6663
   repoURL: https://github.com/speakeasy-sdks/Perceivity-sample-sdk.git
   repoSubDirectory: .
   installationURL: https://github.com/speakeasy-sdks/Perceivity-sample-sdk.git
 features:
   python:
-    core: 4.4.3
+    core: 4.4.4
     globalServerURLs: 2.82.1
 generatedFiles:
   - src/aesop_api/sdkconfiguration.py
