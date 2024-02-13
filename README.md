@@ -68,7 +68,7 @@ Handling errors in this SDK should largely match your expectations.  All operati
 
 ```python
 import aesop_api
-from aesop_api.models import components
+from aesop_api.models import components, errors
 
 s = aesop_api.AesopAPI()
 
@@ -80,7 +80,7 @@ res = None
 try:
     res = s.games_api_create_game(req)
 except errors.SDKError as e:
-    print(e)  # handle exception
+    # handle exception
     raise(e)
 
 if res.game_schema is not None:
