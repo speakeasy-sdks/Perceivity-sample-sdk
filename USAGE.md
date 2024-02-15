@@ -6,7 +6,7 @@ from aesop_api.models import components
 s = aesop_api.AesopAPI()
 
 req = components.GameSchemaIn(
-    title='string',
+    title='<value>',
 )
 
 res = s.games_api_create_game(req)
