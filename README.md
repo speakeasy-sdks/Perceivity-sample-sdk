@@ -42,6 +42,7 @@ res = s.games_api_create_game(req)
 if res.game_schema is not None:
     # handle response
     pass
+
 ```
 <!-- End SDK Example Usage [usage] -->
 
@@ -86,6 +87,7 @@ except errors.SDKError as e:
 if res.game_schema is not None:
     # handle response
     pass
+
 ```
 <!-- End Error Handling [errors] -->
 
@@ -119,6 +121,7 @@ res = s.games_api_create_game(req)
 if res.game_schema is not None:
     # handle response
     pass
+
 ```
 
 
@@ -142,6 +145,7 @@ res = s.games_api_create_game(req)
 if res.game_schema is not None:
     # handle response
     pass
+
 ```
 <!-- End Server Selection [server] -->
 

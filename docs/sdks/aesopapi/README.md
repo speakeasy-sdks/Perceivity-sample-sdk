@@ -32,6 +32,7 @@ res = s.games_api_create_game(req)
 if res.game_schema is not None:
     # handle response
     pass
+
 ```
 
 ### Parameters
@@ -67,6 +68,7 @@ res = s.games_api_list_games()
 if res.response is not None:
     # handle response
     pass
+
 ```
 
 
@@ -96,6 +98,7 @@ res = s.stories_api_list_stories()
 if res.response is not None:
     # handle response
     pass
+
 ```
 
 

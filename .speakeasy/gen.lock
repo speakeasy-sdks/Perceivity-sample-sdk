@@ -3,20 +3,22 @@ id: ac96fecc-1f12-4d58-a720-a30e7b768192
 management:
   docChecksum: 7f8941f6def568cab47a6897827bc769
   docVersion: 0.1.0
-  speakeasyVersion: internal
-  generationVersion: 2.275.4
-  releaseVersion: 0.5.0
-  configChecksum: dcfd1e5ffe6964e547abb36194d9692b
+  speakeasyVersion: 1.204.1
+  generationVersion: 2.279.1
+  releaseVersion: 0.6.0
+  configChecksum: 24b39c8511e44500ddcdffcd168b99d8
   repoURL: https://github.com/speakeasy-sdks/Perceivity-sample-sdk.git
   repoSubDirectory: .
   installationURL: https://github.com/speakeasy-sdks/Perceivity-sample-sdk.git
 features:
   python:
-    core: 4.5.0
+    core: 4.5.1
     globalServerURLs: 2.82.1
+    responseFormat: 0.1.0
 generatedFiles:
   - src/aesop_api/sdkconfiguration.py
   - src/aesop_api/sdk.py
+  - py.typed
   - pylintrc
   - setup.py
   - src/aesop_api/__init__.py
