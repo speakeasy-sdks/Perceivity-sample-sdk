@@ -13,14 +13,14 @@ class AesopAPI:
     sdk_configuration: SDKConfiguration
 
     def __init__(self,
-                 server_idx: int = None,
-                 server_url: str = None,
-                 url_params: Dict[str, str] = None,
-                 client: requests_http.Session = None,
-                 retry_config: utils.RetryConfig = None
+                 server_idx: Optional[int] = None,
+                 server_url: Optional[str] = None,
+                 url_params: Optional[Dict[str, str]] = None,
+                 client: Optional[requests_http.Session] = None,
+                 retry_config: Optional[utils.RetryConfig] = None
                  ) -> None:
         """Instantiates the SDK configuring it with the provided parameters.
-        
+
         :param server_idx: The index of the server to use for all operations
         :type server_idx: int
         :param server_url: The server URL to use for all operations
@@ -34,12 +34,17 @@ class AesopAPI:
         """
         if client is None:
             client = requests_http.Session()
-        
+
         if server_url is not None:
             if url_params is not None:
                 server_url = utils.template_url(server_url, url_params)
 
-        self.sdk_configuration = SDKConfiguration(client, None, server_url, server_idx, retry_config=retry_config)
+        self.sdk_configuration = SDKConfiguration(
+            client,
+            server_url,
+            server_idx,
+            retry_config=retry_config
+        )
 
         hooks = SDKHooks()
 
@@ -49,13 +54,9 @@ class AesopAPI:
             self.sdk_configuration.server_url = server_url
 
         # pylint: disable=protected-access
-        self.sdk_configuration._hooks=hooks
-       
-        
-    
-    
-    
-    
+        self.sdk_configuration._hooks = hooks
+
+
     def games_api_create_game(self, request: components.GameSchemaIn) -> operations.GamesAPICreateGameResponse:
         r"""Create Game"""
         hook_ctx = HookContext(operation_id='games_api_create_game', oauth2_scopes=[], security_source=None)
@@ -111,8 +112,8 @@ class AesopAPI:
 
         return res
 
-    
-    
+
+
     def games_api_list_games(self) -> operations.GamesAPIListGamesResponse:
         r"""List Games"""
         hook_ctx = HookContext(operation_id='games_api_list_games', oauth2_scopes=[], security_source=None)
@@ -163,8 +164,8 @@ class AesopAPI:
 
         return res
 
-    
-    
+
+
     def stories_api_list_stories(self) -> operations.StoriesAPIListStoriesResponse:
         r"""List Stories"""
         hook_ctx = HookContext(operation_id='stories_api_list_stories', oauth2_scopes=[], security_source=None)
@@ -215,4 +216,3 @@ class AesopAPI:
 
         return res
 
-    
